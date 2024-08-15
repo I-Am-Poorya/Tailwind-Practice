@@ -27,7 +27,7 @@
        @apply hover:bg-blue-700 transition-all duration-500 hover:text-white p-4 rounded-2xl font-semibold text-lg hover:text-xl
     }
     .nav__item{
-        @apply transition-all duration-500 hover:bg-green-800 h-full items-center w-40
+        @apply transition-all duration-500 hover:bg-blue-400 h-full w-40 text-center rounded-2xl
     }
     a{
         @apply block m-8
