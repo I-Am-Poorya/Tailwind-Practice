@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+    .test{
+        transition: all 80ms ease-in-out 20ms;
+        -webkit-transition: all 80ms ease-in-out 20ms;
+        -moz-transition: all 80ms ease-in-out 20ms;
+        -ms-transition: all 80ms ease-in-out 20ms;
+        -o-transition: all 80ms ease-in-out 20ms;
+}
+.animate-spinner{
+    @apply animate-spin ;
+}
+
+}
+
+@layer components {
+    .wrapper{
+        @apply max-w-[1400px] mx-auto mt-12 font-semibold ;
+    }
+    .header-bottom__box{
+        @apply flex flex-col gap-8 w-72 h-[28rem] shadow-2xl ;
+    }
+    .header-bottom__input{
+       @apply hover:bg-blue-700 transition-all duration-500 hover:text-white p-4 rounded-2xl font-semibold text-lg hover:text-xl
+    }
+    .nav__item{
+        @apply transition-all duration-500 hover:bg-green-800 h-full items-center w-40
+    }
+    a{
+        @apply block m-8
+    }
+}

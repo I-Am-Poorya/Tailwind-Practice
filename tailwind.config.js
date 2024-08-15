@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./Public/*.html"],
   theme: {
+    
     extend: {
       colors:{
         "primary" : {
@@ -11,6 +12,12 @@ module.exports = {
           "lighter" : "#F1C40F"
         },
       },
+      spacing:{
+        "medium" : "15rem"
+      },
+      screens: {
+        "fn" : "1300px"
+      }
     },
   },
   plugins: [],

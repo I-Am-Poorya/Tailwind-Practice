@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Copatible" content="IE-edge">
@@ -7,12 +7,57 @@
     <link rel="stylesheet" href="./styles/app.css">
     <title>Tailwind Css</title>
 </head>
-<body>
-    <div class= "mx-auto grid  lg:grid-cols-4 md:grid-cols-2 gap-16 mt-16">
-        <div class="bg-primary-100 h-48 w-48"></div>
-        <div class="bg-primary h-48 w-48"></div>
-        <div class="bg-primary-200 h-48 w-48"></div>
-        <div class="bg-primary-lighter h-48 w-48"></div>
-    </div>
+<body class="bg-gray-100 ">
+        <header class="header">
+            <div class="wrapper">
+                <div class="header-top">
+                    <nav class="nav h-20 flex items-center justify-start gap-16 shadow-md shadow-gray-900 bg-black rounded-2xl opacity-80 text-white">
+                        <div class="nav__item"><a href="#">صفحه اصلی</a></div>
+                        <div class="nav__item"><a href="#">فروشگاه </a></div>
+                        <div class="nav__item"><a href="#">شگفت انگیرها</a></div>
+                        <div class="nav__item"><a href="#">تخفیفات</a></div>
+                        <div class="nav__item"><a href="#">پیشنهادات</a></div>
+                    </nav>
+                    <img class="w-[100%] h-[44rem] overflow-hidden rounded-md" src="../images/25.jpg" alt="Picture">
+                </div>
+                <div class="header-bottom ">
+                    <h1 class="mt-16 mb-6 text-3xl font-bold text-violet-700"> دوره های شهید پرور (تخصص محور)</h1>
+                    <header-bottom-container class="flex justify-between">
+                        <div class="header-bottom__box">
+                            <img class="w-full h-72 rounded-3xl" src="../images/8.jpg" alt="shahid1">
+                            <h2 class="text-2xl text-green-700 font-bold mx-auto">شهید مهدی زین الدین</h2>
+                            
+                            <input class="header-bottom__input" type="button" value="مشاهده برای خرید عکس" >
+                        </div>
+                        <div class="header-bottom__box flex">
+                            <img class="w-full h-72 rounded-3xl" src="../images/19.jpg" alt="shahid2">
+                            <h2 class="text-2xl text-green-700 font-bold mx-auto" >شهید مظلوم بهشتی</h2>
+                            
+                            <input class="header-bottom__input" type="button" value="مشاهده برای خرید عکس">
+                        </div>
+                        <div class="header-bottom__box flex">
+                            <img class="w-full h-72 rounded-3xl" src="../images/21.jpg" alt="shahid3">
+                            <h2 class="text-2xl text-green-700 font-bold mx-auto">شهید ابراهیم همت</h2>
+                            
+                            <input class="header-bottom__input" type="button" value="مشاهده برای خرید عکس">
+                        </div>
+                        <div class="header-bottom__box flex">
+                            <img class="w-full h-72 rounded-3xl" src="../images/26.jpg" alt="shahid4">
+                            <h2 class="text-2xl text-green-700 font-bold">شهیدعلى اصغر پورفرح آبادى    </h2>
+                            
+                            <input class="header-bottom__input" type="button" value="مشاهده برای خرید عکس">
+                        </div>
+                    </header-bottom-container>
+                    
+                </div>
+            </div>
+        </header>
+
+        <main class="main mt-24">
+            <div class="wrapper">
+                    <p class="w-full mx-auto text-6xl mb-8 text-red-700 ">  اما این روزا فراموش شده یادتون...</p>
+                <video class="w-full rounded-2xl" src="../video/شهدا شرمنده ايم.mp4" controls></video>
+            </div>
+        </main>
 </body>
 </html>
